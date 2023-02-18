@@ -1,0 +1,8 @@
+.venv
+./venv
+./venv/*
+.idea
+./idea
+./idea/*
+__pycache__
+private_data.py
