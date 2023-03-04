@@ -11,3 +11,5 @@ user_service/__pycache__/*
 
 cloud_admin/__pycache__
 user_service/__pycache__
+
+db.sqlite3
