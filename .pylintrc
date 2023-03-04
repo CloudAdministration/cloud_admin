@@ -1,3 +1,6 @@
 [MASTER]
 load-plugins=pylint_django
 django-settings-module=cloud_admin.settings
+
+[pylint.errors]
+ignored-modules=cloud_admin.private_data
