@@ -1,0 +1,9 @@
+{% load static %}
+<header>
+    <nav>
+         <script src="{% static 'cloud_admin/set_hello_user_name.js' %}"></script>
+        <p>Current page {{ active_page }}</p>
+        <p>Go to<a href="{% url 'hello_world' %}">🏘️ page</a></p>
+    </nav>
+</header>
+<hr/>

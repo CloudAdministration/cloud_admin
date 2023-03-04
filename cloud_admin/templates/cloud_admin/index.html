@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block page_title %}
+    Hello Page
+{% endblock %}
+{% block content %}
+    {% include 'cloud_admin/includes/header.html' with active_page='hello_world' %}
+
+    <p>{{ welcome_message }} </p>
+{% endblock %}

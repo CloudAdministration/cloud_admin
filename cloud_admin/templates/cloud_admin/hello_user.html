@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block page_title %}
+    Hello User
+{% endblock %}
+{% block content %}
+    {% include 'cloud_admin/includes/header.html' with active_page='hello_user' %}
+    <section>
+        <div id='welcome_message' style="display: inline-block">{{ welcome_message }}</div>
+        <div style="display: inline-block" class="name-form"><input type="text" id="user_name" placeholder="wprowadź swoje imię"><button id='submit_user_name' style="margin: 5px" type="submit">Ustaw nazwę</button></div>
+
+    </section>
+{% endblock %}
