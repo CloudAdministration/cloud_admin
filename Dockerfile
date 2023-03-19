@@ -5,7 +5,8 @@ RUN apt-get update \
     build-essential \
     python3-dev \
     python3-pip \
-    && pip install --upgrade pip
+    && pip install --upgrade pip \
+    && pip install localstack
 
 WORKDIR /app
 
@@ -14,4 +15,5 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
+ENTRYPOINT ["localstack", "start"]
 CMD [ "python", "manage.py", "runserver", "0.0.0.0:8000" ]
