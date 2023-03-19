@@ -11,5 +11,10 @@ user_service/__pycache__/*
 
 cloud_admin/__pycache__
 user_service/__pycache__
-
+.localstack
+.localstack/*
+postgres-data
+postgres-data/*
 db.sqlite3
+.env
+.secretenv
